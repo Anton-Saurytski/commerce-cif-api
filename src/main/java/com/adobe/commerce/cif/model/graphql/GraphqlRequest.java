@@ -16,7 +16,7 @@ package com.adobe.commerce.cif.model.graphql;
 
 import io.swagger.annotations.ApiModelProperty;
 
-public class GraphQlRequest {
+public class GraphqlRequest {
 
     @ApiModelProperty(value = "The query string in graphQL query format.", required = true)
     protected String query;

@@ -35,7 +35,7 @@ import com.adobe.commerce.cif.model.common.TaxInfo;
 import com.adobe.commerce.cif.model.customer.LoginResult;
 import com.adobe.commerce.cif.model.discount.Discount;
 import com.adobe.commerce.cif.model.error.ErrorResponse;
-import com.adobe.commerce.cif.model.graphql.GraphQlRequest;
+import com.adobe.commerce.cif.model.graphql.GraphqlRequest;
 import com.adobe.commerce.cif.model.graphql.GraphqlResponse;
 import com.adobe.commerce.cif.model.inventory.InventoryItem;
 import com.adobe.commerce.cif.model.product.Product;
@@ -246,7 +246,7 @@ public class ModelTest {
 
     @Test
     public void testGraphqlRequest() throws Exception {
-        GraphQlRequest graphqlRequest = map("graphqlRequest.json", GraphQlRequest.class);
+        GraphqlRequest graphqlRequest = map("graphqlRequest.json", GraphqlRequest.class);
         FieldTester fieldTester = FieldTester.builder().build();
         fieldTester.assertAllFieldsNotNull(graphqlRequest);
     }

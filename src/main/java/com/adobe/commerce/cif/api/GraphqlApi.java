@@ -21,7 +21,7 @@ import javax.ws.rs.Path;
 import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
 
-import com.adobe.commerce.cif.model.graphql.GraphQlRequest;
+import com.adobe.commerce.cif.model.graphql.GraphqlRequest;
 import com.adobe.commerce.cif.model.graphql.GraphqlResponse;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
@@ -41,7 +41,7 @@ public interface GraphqlApi {
     @Consumes(MediaType.APPLICATION_JSON)
     GraphqlResponse postRequest(
         @ApiParam(value = "The graphQL JSON request", required = true)
-        GraphQlRequest request,
+        GraphqlRequest request,
 
         @ApiParam(value = ACCEPT_LANGUAGE_DESC)
         @HeaderParam(ACCEPT_LANGUAGE) String acceptLanguage
